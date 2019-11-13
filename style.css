@@ -1,0 +1,286 @@
+/* -------------------------- RESET */
+*{
+	margin:0;
+	padding:0;
+	border:none;
+	outline:none;
+	box-sizing:border-box;
+	font-family:Open Sans, sans-serif;
+}
+
+body{background-color:#007db8;}
+a{text-decoration:none;}
+ul{list-style:none;}
+img{max-width:100%;}
+
+/* -------------------------- CONTAINER */
+
+.container{
+	width:100%;
+	float:left;
+	padding:3% 4%;
+}
+
+/* -------------------------- LOGO */
+
+.logo{
+	width:80%;
+	float:left;
+	font-size:1.4em;
+	font-weight:700;
+	text-align:center;
+	margin-top:4.5%;
+}
+
+header{
+	height:80px;
+	background-color:#333;
+}
+
+header a{
+	color:#fff;
+}
+
+/* -------------------------- MENU */
+.btn{
+	float:right;
+	color:#fff;
+	cursor:pointer;
+}
+
+.btn-menu{
+	width:56px;
+	height:56px;
+	text-align:center;
+	border-radius:56px;
+	background-color:#007db8;
+}
+
+.btn-close{
+	font-size:3em;
+	margin:2% 5% 0 0;
+}
+
+.menu{
+	display:none;
+	width:100%;
+	height:50%;
+	position:fixed;
+	color:#fff;
+	background-color:rgba(0,125,184,0.95);
+	top:0;
+	left:0;
+}
+
+.menu ul{
+	width:100%;
+	float:left;
+	text-align:center;
+}
+
+.menu li{
+	padding:1.5%;
+}
+
+.menu li a{
+	font-size:2em;
+	color:#fff;
+	padding:1.5% 3%;
+}
+
+.menu li a:hover{
+	color:black;
+}
+
+/* -------------------------- INTRO */
+
+.banner{
+	background-color:#fff;
+}
+
+.banner img{
+	border-radius:2px;
+	width:30%; /* largura da foto */
+	margin:5% 0 0 35%; /* top right b left */
+}
+
+.banner h2{
+	font-size:2.5em;
+	color:#333333;
+	font-weight:700;
+	text-align:left;
+	margin:5% 0;
+}
+
+.banner p{
+	margin-top:3%;
+	font-size:1.5em;
+	color:#3e454b;
+	text-align:left;	
+}
+
+/* -------------------------- CONTEUDO */
+
+.conteudo{
+	width:100%;
+	background-color:#fff;
+	text-align:left;
+	border-radius:5px;
+	margin-bottom:3%;
+}
+
+.inner{
+	padding:7%;
+}
+
+.inner h1,h2,h3{
+	color:#333333;
+	font-weight:700;
+}
+
+.inner h1{
+	color:#007db8;
+	font-size:2em;
+}
+
+.inner h2{
+	color:#83b81a;
+	font-size:1.6em;
+	margin:5% 0;
+}
+
+.inner h3{
+	font-size:1.3em;
+	margin:3% 0;
+}
+
+.inner p{
+	line-height:1.5em;
+	color:#333333;
+}
+
+/* -------------------------- CONTATO */
+
+#contato a{
+	color:#fff;
+	background-color:#83b81a;
+	padding:8px;
+	
+	display:inline-block;
+	margin:10% 0 3% 30%;
+	
+	width:110px;
+	text-align:center;
+}
+
+/* -------------------------- MIDIAS */
+
+.social li{
+	display:inline-block;
+	margin:1%;
+	font-size:1em;
+	background-color:#f5f5f5;
+	border-radius:3px;
+	padding:2px;
+}
+
+.social a{color:#333;}
+.social a:hover{color:#007db8;font-weight:700;}
+
+/* -------------------------- RODAPE */
+
+.rodape{ /* copyright */
+	font-size:.8em;
+	text-align:center;
+	color:#fff;
+	background-color:#333;
+}
+
+/* --------------------- MOBILE */
+@media screen and (min-width:480px){}
+
+/* --------------------- TABLET */
+@media screen and (min-width:768px){
+	.logo{margin-top:1%;}
+	.btn-menu{margin:-1% 2% 0 0;}
+	#contato a{margin:10% 0 3% 20%;}
+	.social li{margin:7%;}
+}
+
+/* --------------------- DESKTOP */
+@media screen and (min-width:960px){
+	.btn-menu{display:none;}
+	.btn-close{display:none;}
+	
+	.menu{
+		width:auto;
+		line-height:0px;
+		float:right;
+		display:block !important;
+		position:static;
+		background-color:rgba(1,1,1,0);
+	}
+	
+	.menu li{
+		padding:0;
+		float:left;
+	}
+	
+	.menu li a{
+		font-size:1.5em;
+		padding:15px;
+	}
+	
+	.menu li a:hover{
+		border:none;
+		color:#007db8;
+	}
+	
+	.logo{
+		text-align:left;
+		margin-top:-1.6%;
+		font-size:2em;
+	}
+	
+	.banner img{
+		float:left;
+		margin-left:45%;
+		width:15%;
+	}
+	
+	.conteudo{
+		width:90%;
+		float:left;
+		margin-left:5%;
+		margin-top:10%;
+	}
+	
+	.inner p{
+		font-size:1.5em;
+	}
+	
+	.inner h1{
+		font-size:3em;
+	}
+
+	.inner h2{
+		font-size:2.5em;
+	}
+
+	.inner h3{
+		font-size:2em;
+	}
+	
+	#contato a{
+		margin:10% 0 5% 20%;
+		padding:22px;
+		width:200px;
+	}
+	
+	.social li{
+		margin-left:10%;
+		padding:10px;
+	}
+	
+	.rodape{font-size:1em;}
+}

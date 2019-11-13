@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="description" content="Meu Portifolio como analista de dados">
+		<meta name="keywords" content="Python, Analise dados, Data science">
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="Thiago Miranda">
+		
+		<title>Thiago M.</title>
+		<link href="style.css" rel=stylesheet>
+		
+		<link rel="icon" href="iconeAba.png" type="image/x-icon" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	</head>
+
+<body>
+	<header class="container">
+		<a href="index.html">
+			<h1 class="logo">THIAGO MIRANDA</h1>
+		</a>
+		
+		<button class="btn btn-menu">
+			<i class="fa fa-bars fa-lg"></i>
+		</button>
+		
+		<nav class="menu"> <!--MENU-->
+		  <a class="btn btn-close">
+			<i class="fa fa-times"></i>
+		  </a>
+		  <ul>
+			<li> <a href="#resumo">Resumo</a> </li>
+			<li> <a href="#projetos">Projetos</a>	</li>
+			<li> <a href="#contato">Contato</a> </li>
+		  </ul>
+		</nav>
+	</header>
+
+	<div class="container banner">
+		<p>Bem-Vindo! Meu nome é Thiago, Eu estou-me desenvolvendo na área da ciência de dados, atualmente em foco na análise de negócios.
+        Já desenvolvi alguns projetos e estou disponível para trabalhar com você. 
+        Ohe meu portfólio e descubra como venho aplicando minhas habilidades.</p>
+		<img src="img/foto.png" alt="identificacao"/>
+	</div>
+	
+	<main class="container">
+		<article id="resumo" class="conteudo">
+			<div class="inner">
+			<h1>HABILIDADES</h1>
+			<h2>Tecnologias</h2>
+				<h3>Python</h3>
+				<p>Bibliotecas: Pandas, NumPy e Matplotlib.
+				<br>Documentação do processo de análises com Jupyter Notebook.
+				<br>Isolamento de ambientes com venv.</p>
+				
+				<h3>Power BI</h3>
+				<p>Criação de Dashboards, elaboração de Data Storytelling e relatórios gerenciais.
+				<br>Pratica com DAX</p>
+				
+				<h3>Bancos de dados</h3>
+				<p>Realização de queries em MySQL</p>
+				
+			<h2>Outros</h2>
+				<h3>Web</h3>
+				<p>HTML e CSS (Este site).</p>
+				
+				<h3>Git</h3>
+				<p>Controle de versão de arquivos, integrado com GitHub.</p>
+			</div>
+		</article>
+		
+		<article id="projetos" class="conteudo">
+			<div class="inner">
+			<h1>PROJETOS</h1>
+				<p>Meus projetos estão organizados em obtenção de dados, manipulação e disponibilização.</p>
+				
+				<h2>Web Crawler</h2>
+				<p>Obtenção de dados web.</p>
+
+                <h2>Tratamento de dataSets</h2>
+				<p>Unificando e limpando conjuntos de dados, de diversos arquivos e formatos.</p>
+				
+				<h2>Visualização de dados</h2>
+				<p>Dashboard interativo com resumo de vendas, usando filtros e comparativos.</p>
+			</div>
+		</article>
+			
+		<article id="contato" class="conteudo">
+			<div class="inner">
+				<h1>CONTATO</h1>
+				<a href="mailto:thiagotm@outlook.com">Enviar Email</a>
+				<a href="https://wa.me/5548944930103" target="_blank">WhatsApp</a>
+			</div>
+		</article>
+		
+		<div class="social">
+			<ul>
+				<li> <a href="https://www.linkedin.com/in/sevlamare/" target="_blank">Linkedin</a> </li>
+				<li> <a href="https://devnotas.blogspot.com/" target="_blank">Blog</a> </li>
+				<li> <a href="https://github.com/sevlamare" target="_blank">GitHub</a> </li>
+				<li> <a href="https://pt.stackoverflow.com/users/120590/sevila" target="_blank">StackOverflow</a> </li>
+			</ul>
+		</div>
+	</main>
+	
+	<footer class="container rodape">
+		<small>© Thiago Miranda.</small>
+	</footer>
+
+	<!-- JQUERY -->
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script>
+	$(".btn-menu").click(function(){
+		$(".menu").show();
+	});
+
+	$(".btn-close").click(function(){
+		$(".menu").hide();
+	});
+	</script>
+
+
+</body>
+</html>
