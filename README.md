@@ -1,5 +1,5 @@
 # ThiagoMiranda
 My personal web page.
 
-You can visit this page in link bellow:<br>
+You can visit this page in this link bellow:<br>
 https://sevlamare.github.io/ThiagoMiranda/
