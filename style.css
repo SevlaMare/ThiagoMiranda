@@ -150,22 +150,22 @@ header a{
 
 .inner h1{
 	color:#007db8;
-	font-size:2em;
+	font-size:1.4em;
 }
 
 .inner h2{
 	color:#83b81a;
-	font-size:1.6em;
+	font-size:1.2em;
 	margin:5% 0;
 }
 
 .inner h3{
-	font-size:1.3em;
+	font-size:1.1em;
 	margin:3% 0;
 }
 
 .inner p{
-	line-height:1.5em;
+	line-height:1em;
 	color:#333333;
 }
 
@@ -270,25 +270,25 @@ header a{
 	}
 	
 	.inner h1{
-		font-size:3em;
+		font-size:2em;
 	}
 
 	.inner h2{
-		font-size:2.5em;
+		font-size:1.6em;
 	}
 
 	.inner h3{
-		font-size:2em;
+		font-size:1.4em;
 	}
 	
 	#contato a{
-		margin:10% 0 5% 20%;
+		margin:10% 0 5% 15%;
 		padding:22px;
 		width:200px;
 	}
 	
 	.social li{
-		margin-left:10%;
+		margin-left:3%;
 		padding:10px;
 	}
 	
