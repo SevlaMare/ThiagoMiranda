@@ -40,83 +40,106 @@
 		</nav>
 	</header>
 
-	<div class="container banner">
-		<p>Welcome! My name is Thiago, from Brazil.
-        You can see some of mine projects on this page, and discovery how I`m apply my skills as a web developer.
-		Currenctly I`m available to work with you, feel free to contact me in case you need any further information.</p>
-		<img src="img/foto.png" alt="identificacao"/>
+	<div class="container banner" id="banner1">
+		<p>Welcome! My name is Thiago. Currently, 
+		I'm working in a Bootcamp to become a complete full-stack developer.
+		You can see some of my projects on this page, 
+		and discover how I apply my skills. 
+		I`m available to work with you, 
+		feel free to contact me in case you need any further information.</p>
+		<!-- <img src="img/foto.png" alt="identificacao"/> -->
 	</div>
 	
 	<main class="container">
 		<article id="resumo" class="conteudo">
 			<div class="inner">
 			<h1>SKILLS</h1>
-			<h2>Tecnologies</h2>
-				<h3>Python</h3>
-				<p>Favorite Lybraries: Pandas(Like Excel), NumPy(Math stuff) and Matplotlib(Charts).
-				<br>Documentation of data analycts process with Jupyter Notebook.
-				<br>Virtual envoriment with venv and package mananger with pip.
-				<br>Unittest to write test suit.<p>
-
-				<h3>JS</h3>
-				<p>Pratice OOP and DOM integration.
-				<br>REACT library and REDUX.</p>
-		
-				<h3>Data Bases</h3>
-				<p>Pratice with ORMs and CRUD operations.</p>
 			
-			<h2>Others</h2>
-				<h3>Web</h3>
-				<p>HTML and CSS resposible design.
-				<br>Bootstrap 4 framework.</p>
-				
-				<h3>Git</h3>
-				<p>Files version control workflow and integration with GitHub.</p>
+			<h2>Core Skills</h2>
+				<h3>Algorithms and Data Structure</h3>
+				<h3>Design Patterns</h3>
+				<h3>Data Modeling</h3>
+				<h3>Clean Code</h3>
+				<h3>UI and UX Design</h3>
+			
+			<h2>Tecnologies</h2>
+				<h3>JS</h3>
+				<p>DOM manipulation</p>
+				<p>ExpressJS with handlebars</p>
+				<p>TDD with Mocha and Chai</p>
+
+				<h3>Databases</h3>
+				<p>MySQL</p>
+				<p>MongoDB</p>
+			
+			<h2>Front-End</h2>
+				<h3>Concepts</h3>
+					<p>HTML and CSS resposible design.</p>
+					<p>CSS advance selectors.</p>
+					<p>Box model and float.</p>
+					<p>Flexbox and Grid Layout.</p>
+				<h3>Tecnologies</h3>
+					<p>Bootstrap 4</p>
+					<p>Sass</p>
+					<p>React</p>
+			<h2>Tools</h2>
+				<h3>Git and GitHub</h3>
+				<p>Workflow and integration.</p>
+				<h3>VScode</h3>
+				<p>Debug.</p>
 			</div>
 		</article>
 		
 		<article id="projetos" class="conteudo">
 			<div class="inner">
-			<h1>PROJECTS (Under Construction)</h1>
+			<h1>Some of my best Projects</h1>
 				<p>My portfolio is organized into static pages and web apps.</p>
 				
-				<h2>Bussiness Card</h2>
-				<p>Awesome fluid design bussiness card.</p>
+				<h2>Cozy Hotel</h2>
+				<p>A elegant, modern and responsible website.</p>
+				<p>Feature: Responsible Design with mobile first</p>
+				<p>Build with pure CSS and HTML</p>
 				
-				<h2>Consulting</h2>
-				<p>A impactant and minimalist consulting services page.</p>
-
-                <h2>Blog</h2>
-				<p>It`s a content blog, where people can login and post articles.</p>
-				<a id="teste1" href="https://github.com/SevlaMare/DjangoBlog/tree/master/djangoApp" target="_blank">Visit this project</a>
-				
-				<h2>Sales mananger</h2>
-				<p>A application that allow you to follow up the sales with interative dashboards.</p>
+				<h2>Awesome Blog</h2>
+				<p>Features: Posting system with CRUD for users and admin, Admin panel, Login and Session.</p>
+				<p>The main technologies used are Node and MongoDB.</p>
 			</div>
 		</article>
 			
 		<article id="contato" class="conteudo">
 			<div class="inner">
 				<h1>CONTACT</h1>
-				<a href="mailto:sevilamare@gmail.com">Send Mail</a>
-				<a href="https://wa.me/5548994190005" target="_blank">WhatsApp</a>
+				<a href="mailto:thiagotm@outlook.com">Send Mail</a>
+				<a href="https://api.whatsapp.com/send?phone=+5548991417270" target="_blank">WhatsApp</a>
 			</div>
 		</article>
 		
 		<div class="social">
 			<ul>
-				<li> <a href="https://www.linkedin.com/in/sevlamare/" target="_blank">Linkedin</a> </li>
-				<li> <a href="https://devnotas.blogspot.com/" target="_blank">Blog</a> </li>
 				<li> <a href="https://github.com/SevlaMare" target="_blank">GitHub</a> </li>
+				<li> <a href="https://www.linkedin.com/in/sevlamare" target="_blank">Linkedin</a> </li>
+				<li> <a href="https://devnotas.blogspot.com" target="_blank">Blog</a> </li>
 				<li> <a href="https://pt.stackoverflow.com/users/120590/sevila" target="_blank">StackOverflow</a> </li>
 			</ul>
 		</div>
 	</main>
 	
 	<footer class="container rodape">
-		<small>© Thiago Miranda.</small>
+		<small>© Thiago Miranda. 2019</small>
 	</footer>
 
-	<!-- Need fix drop menu for mobile -->
+	<!-- JQUERY -->
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script>
+		$(".btn-menu").click(function(){
+			$(".menu").show();
+		});
+
+		$(".btn-close").click(function(){
+			$(".menu").hide();
+		});
+	</script>
+
+
 </body>
 </html>

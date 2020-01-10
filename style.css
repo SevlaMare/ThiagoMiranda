@@ -23,7 +23,7 @@ a{
 .container{
 	width:100%;
 	float:left;
-	padding:3% 4%;
+	padding:3% 15%;
 }
 
 /* -------------------------- LOGO */
@@ -122,6 +122,11 @@ header a{
 	font-size:1.5em;
 	color:#3e454b;
 	text-align:left;	
+}
+
+.banner1{
+	/* margin: auto; */
+	height: 100vh;
 }
 
 /* -------------------------- CONTEUDO */
