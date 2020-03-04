@@ -1,296 +1,214 @@
-/* -------------------------- RESET */
-*{
-	margin:0;
-	padding:0;
-	border:none;
-	outline:none;
-	box-sizing:border-box;
-	font-family:Open Sans, sans-serif;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body{background-color:#007db8;}
-ul{list-style:none;}
-img{max-width:100%;}
-a{
-	text-decoration:none; 
-	color:blue;
+@media (min-width: 768px) {
+  nav {
+    position: sticky;
+    top: 0;
+  }
 }
 
-#teste1{font-size:1.5em;}
-
-/* -------------------------- CONTAINER */
-
-.container{
-	width:100%;
-	float:left;
-	padding:3% 15%;
+/* --- NAVBAR --- */
+nav {
+  position: sticky;
+  top: 0;
 }
 
-/* -------------------------- LOGO */
-
-.logo{
-	width:80%;
-	float:left;
-	font-size:1.4em;
-	font-weight:700;
-	text-align:center;
-	margin-top:4.5%;
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 15px 15px 30px;
+  background: #007DB8;
 }
 
-header{
-	height:80px;
-	background-color:#333;
+.menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #fff;
 }
 
-header a{
-	color:#fff;
+.menu a:hover {
+  color: #333;
+  transition: .3s;
 }
 
-/* -------------------------- MENU */
-.btn{
-	float:right;
-	color:#fff;
-	cursor:pointer;
+.menu li {
+  display: inline;
+  margin-right: 25px;
 }
 
-.btn-menu{
-	width:56px;
-	height:56px;
-	text-align:center;
-	border-radius:56px;
-	background-color:#007db8;
+#logo {
+  font-size: 2rem;
 }
 
-.btn-close{
-	font-size:3em;
-	margin:2% 5% 0 0;
+/* --- ABOUT --- */
+.about {
+  background: #fff;
+  padding: 65px 0 65px 70px;
+  max-width: 1100px;
+  margin-right: 40px;
 }
 
-.menu{
-	display:none;
-	width:100%;
-	height:50%;
-	position:fixed;
-	color:#fff;
-	background-color:rgba(0,125,184,0.95);
-	top:0;
-	left:0;
+.about p {
+  font-size: 1.3rem;
+  color: #333;
 }
 
-.menu ul{
-	width:100%;
-	float:left;
-	text-align:center;
+.about a {
+  color: #007DB8;
+  font-weight: bold;
 }
 
-.menu li{
-	padding:1.5%;
+.about a:hover {
+  text-decoration: underline;
 }
 
-.menu li a{
-	font-size:2em;
-	color:#fff;
-	padding:1.5% 3%;
+#picture {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
-.menu li a:hover{
-	color:black;
+/* --- OTHERS --- */
+.title-section {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+  margin: 20px 0;
+  margin-top: 100px;
 }
 
-/* -------------------------- INTRO */
-
-.banner{
-	background-color:#fff;
+.title-comment {
+  text-align: center;
 }
 
-.banner img{
-	border-radius:2px;
-	width:30%; /* largura da foto */
-	margin:5% 0 0 35%; /* top right b left */
+hr {
+  border-top: 1px solid #ecf0f1;
+  margin: 15px 10%;
 }
 
-.banner h2{
-	font-size:2.5em;
-	color:#333333;
-	font-weight:700;
-	text-align:left;
-	margin:5% 0;
+/* --- SKILLS --- */
+.grid {
+  display: grid;
+  grid-template: 1fr / repeat(5, 1fr);
+  grid-gap: 15px;
+  margin: 25px;
+  background: #fff;
 }
 
-.banner p{
-	margin-top:3%;
-	font-size:1.5em;
-	color:#3e454b;
-	text-align:left;	
+.box {
+  padding: 20px;
+  border: solid 6px #444;
+  border-radius: 10px;
 }
 
-.banner1{
-	/* margin: auto; */
-	height: 100vh;
+.box h3 {
+  margin-bottom: 10px;
 }
 
-/* -------------------------- CONTEUDO */
-
-.conteudo{
-	width:100%;
-	background-color:#fff;
-	text-align:left;
-	border-radius:5px;
-	margin-bottom:3%;
+.ico-skill {
+  width: 90px;
+  margin-bottom: 15px;
 }
 
-.inner{
-	padding:7%;
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.inner h1,h2,h3{
-	color:#333333;
-	font-weight:700;
+/* TOOLS */
+.tools {
+  display: flex;
+  justify-content: center;
 }
 
-.inner h1{
-	color:#007db8;
-	font-size:1.4em;
+.tools li {
+  color: #666;
+  list-style: square;
 }
 
-.inner h2{
-	color:#83b81a;
-	font-size:1.2em;
-	margin:5% 0;
+.tools ul {
+  margin-right: 70px;
 }
 
-.inner h3{
-	font-size:1.1em;
-	margin:3% 0;
+.tools li {
+  font-size: 1.2rem;
 }
 
-.inner p{
-	line-height:1em;
-	color:#333333;
+.tier3 {
+  font-size: 1.6rem;
 }
 
-/* -------------------------- CONTATO */
-
-#contato a{
-	color:#fff;
-	background-color:#83b81a;
-	padding:8px;
-	
-	display:inline-block;
-	margin:10% 0 3% 30%;
-	
-	width:110px;
-	text-align:center;
+/* --- PROJECTS --- */
+.grid-2 {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  grid-gap: 15px;
+  margin: 20px 50px;
 }
 
-/* -------------------------- MIDIAS */
-
-.social li{
-	display:inline-block;
-	margin:1%;
-	font-size:1em;
-	background-color:#f5f5f5;
-	border-radius:3px;
-	padding:2px;
+.g2-item0 {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
 }
 
-.social a{color:#333;}
-.social a:hover{color:#007db8;font-weight:700;}
-
-/* -------------------------- RODAPE */
-
-.rodape{ /* copyright */
-	font-size:.8em;
-	text-align:center;
-	color:#fff;
-	background-color:#333;
+.g2-item1 {
+  grid-row: span 2;
 }
 
-/* --------------------- MOBILE */
-@media screen and (min-width:480px){}
-
-/* --------------------- TABLET */
-@media screen and (min-width:768px){
-	.logo{margin-top:1%;}
-	.btn-menu{margin:-1% 2% 0 0;}
-	#contato a{margin:10% 0 3% 20%;}
-	.social li{margin:7%;}
+#prj-ico-1 {
+  float: left;
+  width: 100px;
 }
 
-/* --------------------- DESKTOP */
-@media screen and (min-width:960px){
-	.btn-menu{display:none;}
-	.btn-close{display:none;}
-	
-	.menu{
-		width:auto;
-		line-height:0px;
-		float:right;
-		display:block !important;
-		position:static;
-		background-color:rgba(1,1,1,0);
-	}
-	
-	.menu li{
-		padding:0;
-		float:left;
-	}
-	
-	.menu li a{
-		font-size:1.5em;
-		padding:15px;
-	}
-	
-	.menu li a:hover{
-		border:none;
-		color:#007db8;
-	}
-	
-	.logo{
-		text-align:left;
-		margin-top:-1.6%;
-		font-size:2em;
-	}
-	
-	.banner img{
-		float:left;
-		margin-left:45%;
-		width:15%;
-	}
-	
-	.conteudo{
-		width:90%;
-		float:left;
-		margin-left:5%;
-		margin-top:10%;
-	}
-	
-	.inner p{
-		font-size:1.5em;
-	}
-	
-	.inner h1{
-		font-size:2em;
-	}
+/* --- CONTACT --- */
+.ico-media {
+  width: 30px;
+}
 
-	.inner h2{
-		font-size:1.6em;
-	}
+.social-media {
+  display: flex;
+  justify-content: center;
+}
 
-	.inner h3{
-		font-size:1.4em;
-	}
-	
-	#contato a{
-		margin:10% 0 5% 15%;
-		padding:22px;
-		width:200px;
-	}
-	
-	.social li{
-		margin-left:3%;
-		padding:10px;
-	}
-	
-	.rodape{font-size:1em;}
+.social-media li {
+  padding-right: 40px;
+  line-height: 36px;
+}
+
+/* --- BACKGROUND --- */
+.bg {
+  background: #7FA678;
+}
+
+#background {
+  width: 80%;
+  margin: 50px;
+  margin-left: 10%;
+}
+
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  line-height: 36px;
+  background: #007DB8;
+}
+
+footer small {
+  color: #fff;
 }
