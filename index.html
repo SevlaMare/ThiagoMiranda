@@ -18,8 +18,8 @@
 
 
 <!-- NAVBAR -->
-<nav class="sticky bg-blue-steel">
-  <div class="flex space-between align-center">
+<nav class="sticky">
+  <div class="container flex space-between align-center">
     <div class="px-2 py-05">
       <a href="#about" class="fs1 f08">
         <h1 id="logo">Thiago Miranda</h1>
@@ -39,12 +39,13 @@
 </nav>
 
 
-<main>
+<main class="container">
   <!-- ABOUT -->
   <section class="grid" id="about">
     <img src="images/picture.png" alt="picture" class="justify-center" id="avatar"/>
-    <div>
-      <h3>Welcome! I'm Thiago a software developer.</h3>
+    <div class="p3">
+      <h3>Welcome! I'm Thiago a Software Developer.</h3>
+      <br>
       <p>I build applications and responsive web pages.</p>
       <p>You want to talk about a project, idea or need a solution? 
         <a href="#projects">Contact</a> 
@@ -52,43 +53,97 @@
     </div>
   </section>
 
-  <!-- PROJECT -->
+  <!-- PROJECTS -->
   <section id="projects" class="mx-15">
     <header class="my-3 flex wrap justify-center">
       <h3>Featured Projects</h3>
       <hr>
     </header>
 
-    <article class="grid box py-3">
-      <div>
+    <!-- PRJ 1 -->
+    <article class="grid box py-3 my-3">
+      <div class="box1">
         <img src="images/proj1.png" class="img-prj">
       </div>
 
-      <!-- DESCRIPTION -->
-      <h1 class="mb-2">DevPro</h1>
-      <p class="mb-2">
-        A responsive and with a modern design page, 
-        where you can buy tickets to online classes.
-        Here I made the Front-end only.
-      </p>
+      <div class="box2">
+        <!-- DESCRIPTION -->
+        <h1 class="mb-2">DevPro</h1>
+        <p class="mb-2">
+          A responsive and with a modern design page, 
+          where you can buy tickets to online classes.
+          Here I made the Front-end only.
+        </p>
 
-      <!-- TAGS -->
-      <ul class="mt-1">
-        <li>CSS</li>
-        <li>HTML</li>
-        <li>Responsive Design</li>
-        <li>Mobile First</li>
-      </ul>
+        <!-- TAGS -->
+        <ul class="tag mt-1">
+          <li>CSS</li>
+          <li>HTML</li>
+          <li>Responsive Design</li>
+          <li>Mobile First</li>
+          <li>User Experience</li>
+          <li>User Interface</li>
+        </ul>
 
-      <!-- LINKS -->
-      <div class="mt-2">
-        <a href="https://sevlamare.github.io/CSS-course-platform/" target="_blank" class="btn mr-15 mb-15">LIVE DEMO</a>
-        <a href="https://github.com/SevlaMare/CSS-course-platform" target="_blank" class="btn">SOURCE CODE</a>
+        <!-- LINKS -->
+        <div class="mt-2">
+          <a href="https://sevlamare.github.io/CSS-course-platform/" target="_blank" class="btn mr-15 mb-15">LIVE DEMO</a>
+          <a href="https://github.com/SevlaMare/CSS-course-platform" target="_blank" class="btn">SOURCE CODE</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PRJ 2 -->
+    <article class="grid box py-3 my-3">
+      <div class="box1">
+        <img src="images/proj2.png" class="img-prj">
+      </div>
+
+      <div class="box2">
+        <!-- DESCRIPTION -->
+        <h1 class="mb-2">Web Scrapper</h1>
+        <p class="mb-2">
+          Need get a specify information from a site and turn this data into a table?
+          Here I made a bot with Ruby to do this, with very few configurations, you can grab any raw data.
+        </p>
+
+        <!-- TAGS -->
+        <ul class="tag mt-1">
+          <li>Ruby</li>
+          <li>Nokogiri</li>
+          <li>Oriented Object</li>
+          <li>Unit Test</li>
+        </ul>
+
+        <!-- LINKS -->
+        <div class="mt-2">
+          <a href="https://sevlamare.github.io/CSS-course-platform/" target="_blank" class="btn mr-15 mb-15">LIVE DEMO</a>
+          <a href="https://github.com/SevlaMare/CSS-course-platform" target="_blank" class="btn">SOURCE CODE</a>
+        </div>
       </div>
     </article>
   </section>
+
+  <section>
+    <h3>Contact</h3>
+    <ul>
+      <li><a href="https://api.whatsapp.com/send?phone=+5548991417270" target="_blank">Whatsapp</a></li>
+      <li><a href="mailto:thiagotm@outlook.com">Email</a></li>
+    </ul>
+  </section>
 </main>
 
+<footer>
+  <div class="container flex space-between p1">
+    <small>Copyright by<a href="#">Thiago Miranda</a>All rights reserved.</small>
+
+    <ul class="flex">
+      <li><a href="https://www.linkedin.com/in/sevla-mare" target="_blank">Linkedin</a></li>
+      <li><a href="https://twitter.com/sevlamare" target="_blank">Twitter</a></li>
+      <li><a href="https://github.com/SevlaMare" target="_blank">Github</a></li>
+    </ul>
+  </div>
+</footer>
 
 </body>
 </html>
