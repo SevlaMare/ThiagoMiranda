@@ -6,16 +6,16 @@
 	
 	<meta name="description" content="I build modern and responsible web pages and applications. Come to see my projects.">
 	<meta name="keywords" content="Front-end, html, css, JS, react, javascript, bootstrap">
-	<meta name="robots" content="index, follow">
 	<meta name="author" content="Thiago Miranda">
-	
+  <meta name="robots" content="index, follow">
+
 	<link href="style.css" rel=stylesheet>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-	<link rel="icon" href="images/icons/chart.svg" type="image/x-icon"/>
+  <link rel="icon" href="images/icons/chart.svg" type="image/x-icon"/>
+
 	<title>Thiago Miranda • Portifolio</title>
 </head>
 <body>
-
 
 <!-- NAVBAR -->
 <nav class="sticky">
@@ -38,7 +38,6 @@
   </div>
 </nav>
 
-
 <main class="container">
   <!-- ABOUT -->
   <section class="grid" id="about">
@@ -48,20 +47,17 @@
       <br>
       <p>I build applications and responsive web pages.</p>
       <p>You want to talk about a project, idea or need a solution? 
-        <a href="#projects">Contact</a> 
+        <a href="#contact">Contact</a> 
       </p>
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects" class="mx-15">
-    <header class="my-3 flex wrap justify-center">
-      <h3>Featured Projects</h3>
-      <hr>
-    </header>
+    <h3 class="my-3">Featured Projects</h3>
 
     <!-- PRJ 1 -->
-    <article class="grid box py-3 my-3">
+    <article class="grid box py-3 my-6">
       <div class="box1">
         <img src="images/proj1.png" class="img-prj">
       </div>
@@ -94,7 +90,7 @@
     </article>
 
     <!-- PRJ 2 -->
-    <article class="grid box py-3 my-3">
+    <article class="grid box py-3 my-6">
       <div class="box1">
         <img src="images/proj2.png" class="img-prj">
       </div>
@@ -124,24 +120,36 @@
     </article>
   </section>
 
-  <section>
-    <h3>Contact</h3>
+  <!-- CONTACT -->
+  <section class="mx-15" id="contact">
+    <h3 class="my-3">Contact</h3>
     <ul>
-      <li><a href="https://api.whatsapp.com/send?phone=+5548991417270" target="_blank">Whatsapp</a></li>
-      <li><a href="mailto:thiagotm@outlook.com">Email</a></li>
+      <li class="mb-2"><a href="https://api.whatsapp.com/send?phone=+5548991417270" target="_blank">phone / whatsApp +55 48 99141 7270</a></li>
+      <li><a href="mailto:thiagotm@outlook.com">email / skype: thiagotm@outlook.com</a></li>
     </ul>
   </section>
 </main>
 
+<hr class="footer-line mt-3">
 <footer>
-  <div class="container flex space-between p1">
-    <small>Copyright by<a href="#">Thiago Miranda</a>All rights reserved.</small>
+  <div class="container p1">
+    <ul class="flex justify-center wrap py-3">
+      <li><a href="https://www.linkedin.com/in/sevla-mare" target="_blank">
+        <img src="images/icons/linkedin.svg" class="ico-media"> Linkedin
+      </a></li>
 
-    <ul class="flex">
-      <li><a href="https://www.linkedin.com/in/sevla-mare" target="_blank">Linkedin</a></li>
-      <li><a href="https://twitter.com/sevlamare" target="_blank">Twitter</a></li>
-      <li><a href="https://github.com/SevlaMare" target="_blank">Github</a></li>
+      <li><a href="https://twitter.com/sevlamare" target="_blank">
+        <img src="images/icons/twitter.svg" class="ico-media"> Twitter
+      </a></li>
+
+      <li><a href="https://github.com/SevlaMare" target="_blank">
+        <img src="images/icons/github.svg" class="ico-media"> Github
+      </a></li>
     </ul>
+
+    <small class="flex justify-center align-center f06 pt-3 pb-1" id="copyr">
+      &copy 2020 by Thiago Miranda. All rights reserved.
+    </small>
   </div>
 </footer>
 
