@@ -33,6 +33,7 @@
 .mt-2 { margin-top: 20px; }
 .mt-3 { margin-top: 30px; }
 .mb-2 { margin-bottom: 20px; }
+.mt-15 { margin-top: 15px }
 .mb-15 { margin-bottom: 15px }
 .mr-15 { margin-right: 15px !important; }
 
@@ -62,6 +63,11 @@
   padding-bottom: 30px;
 }
 
+.my-2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .my-3 {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -77,12 +83,15 @@
   margin-right: 80px;
 }
 
+.m-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* CONTAINER */
 .container {
   max-width: 1100px;
   min-width: 250px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .box {
@@ -128,15 +137,13 @@
 /* UTILITIES */
 .btn {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 10px 15px;
 
   font-size: 0.8rem;
   letter-spacing: 0;
   font-weight: 700;
 
-  border: solid 5px #123;
   border-radius: 5px;
-
   background: #123;
   color: #fff;
 }
@@ -156,7 +163,6 @@ main {
 /* NAVBAR */
 nav { background: rgba(70, 130, 180, 0.87); }
 .larg-nav-btn { display: none }
-
 
 .tag li {
   display: inline-block;
@@ -188,6 +194,12 @@ header {
   margin: 0 auto; 
 }
 
+.header-line {
+  border-top: 1px solid red;
+  margin-top: -25px;
+  width: 70%;
+}
+
 .box1 {
   min-width: 250px;
   max-width: 400px;
@@ -202,8 +214,24 @@ header {
   width: 100%; 
 }
 
+.btn-live:hover {
+  transition: all .3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.btn-source {
+  border-color: rgb(17, 34, 51, 80%);
+  background: rgb(17, 34, 51, 80%);
+}
+
+/* CONTACT */
+#contact a { 
+  color: #333;
+  padding: 4px;
+}
+
 /* FOOTER */
-.footer-line {
+.line-1 {
   width: 100%;
   border: 1px solid rgba(209, 209, 209, 0.25);
 }
@@ -215,8 +243,4 @@ footer a {
   margin-right: 5px;
   padding: 5px;
   color: #333;
-}
-
-@media screen and (min-width: 768px) {
-  #avatar { float: left }
 }
