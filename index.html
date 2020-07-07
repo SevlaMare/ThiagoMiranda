@@ -4,200 +4,158 @@
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<meta name="description" content="I build modern and responsible web applications. Come to see my projects.">
+	<meta name="description" content="I build modern and responsible web pages and applications. Come to see my projects.">
 	<meta name="keywords" content="Front-end, html, css, JS, react, javascript, bootstrap">
-	<meta name="robots" content="index, follow">
 	<meta name="author" content="Thiago Miranda">
-	
+  <meta name="robots" content="index, follow">
+
 	<link href="style.css" rel=stylesheet>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/icons/chart.svg" type="image/x-icon"/>
 
-	<link rel="icon" href="images/icons/chart.svg" type="image/x-icon"/>
-	<title>Freelance Full-Stack Developer - Thiago Miranda</title>
+	<title>Thiago Miranda • Portifolio</title>
 </head>
-
 <body>
 
-
 <!-- NAVBAR -->
-<nav>
-	<div class="menu">
-		<a href="#about">
-			<h1 id="logo">Thiago Miranda</h1>
-		</a>
-	
-		<ul>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</div>
+<nav class="sticky">
+  <div class="container m-center flex space-between align-center">
+    <div class="px-2 py-05">
+      <a href="#about" class="fs1 f08">
+        <h1 id="logo">Thiago Miranda</h1>
+      </a>
+      <h2 class="fs1 f12">SOFTWARE DEVELOPER</h2>
+    </div>
+
+    <span>
+      <img src="images/icons/menu.svg" class="icon">
+    </span>
+
+    <ul class="larg-nav-btn">
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </div>
 </nav>
 
+<main class="container">
+  <!-- ABOUT -->
+  <section class="grid" id="about">
+    <img src="images/picture.png" alt="picture" class="justify-center" id="avatar"/>
+    <div class="p3">
+      <h3>Welcome! I'm Thiago a Software Developer.</h3>
+      <br>
+      <p>I build applications and responsive web pages.</p>
+      <br>
+      <p>You want to talk about a project, idea or need a solution? 
+        <a href="#contact">Contact</a> 
+      </p>
+    </div>
+  </section>
 
-<!-- ABOUT -->
-<div class="about" id="about">
-	<img src="images/picture.png" alt="picture" id="picture"/>
-	<p>Welcome! My name is Thiago. Currently, 
-	I'm working as a freelancer Full-Stack Web Developer.
-	You can see some of my <a href="#projects">projects</a> in this page, 
-	and discover how I apply my skills. 
-	I'm available to work with you, feel free to 
-	<a href="#contact">contact</a> me in case you need any further information.</p>
-</div>
+  <!-- PROJECTS -->
+  <section id="projects" class="mx-15">
+    <header class="flex justify-center">
+      <h3 class="my-3">Featured Projects</h3>
+    </header>
+    <hr class="header-line m-center">
 
+    <!-- PRJ 1 -->
+    <article class="grid box py-3 my-6">
+      <div class="box1">
+        <img src="images/proj1.png" class="img-prj mt-15">
+      </div>
 
-<!-- BACKGROUND TRANSITION -->
-<div class="bg">
-	<img src="images/background.jpg" alt="beach" id="background">
-</div>
+      <div class="box2">
+        <!-- DESCRIPTION -->
+        <h4 class="f12 pt-2 my-2">DevPro</h4>
+        <p class="mb-2">
+          A responsive and with a modern design page, 
+          where you can buy tickets to online classes.
+          Here I made the Front-end only.
+        </p>
 
+        <!-- TAGS -->
+        <ul class="tag mt-1">
+          <li>CSS</li>
+          <li>HTML</li>
+          <li>Responsive Design</li>
+          <li>Mobile First</li>
+          <li>User Experience</li>
+          <li>User Interface</li>
+        </ul>
 
-<!-- SKILLS -->
-<h2 class="title-section" id="skills">Skills</h2>
-<p class="title-comment">These technologies are my main stack to develop web applications</p>
-<hr>
-<section class="grid">
-	<article class="box">
-		<div class="center">
-			<img src="images/css.png" alt="css3" class="ico-skill">
-			<h3>CSS3</h3>
-			<p>Responsible Design</p>
-			<p>Mobile First</p>
-			<p>UI & UX</p>
-		</div>
-	</article>
+        <!-- LINKS -->
+        <div class="mt-2">
+          <a href="https://sevlamare.github.io/CSS-course-platform/" target="_blank" class="btn mr-15 mb-15 btn-live">LIVE DEMO</a>
+          <a href="https://github.com/SevlaMare/CSS-course-platform" target="_blank" class="btn btn-source">SOURCE CODE</a>
+        </div>
+      </div>
+    </article>
 
-	<article class="box">
-		<div class="center">
-			<img src="images/javascript.png" alt="javascript" class="ico-skill">
-			<h3>JavaScript</h3>
-			<p>Express</p>
-			<p>React</p>
-		</div>
-	</article>
+    <!-- PRJ 2 -->
+    <article class="grid box py-3 my-6">
+      <div class="box1">
+        <img src="images/proj2.png" class="img-prj">
+      </div>
 
-	<article class="box">
-		<div class="center">
-			<img src="images/mysql.png" alt="mysql" class="ico-skill">
-			<h3>SQL</h3>
-			<p>MySQL</p>
-			<p>PostGress</p>
-		</div>
-	</article>
+      <div class="box2">
+        <!-- DESCRIPTION -->
+        <h4 class="f12 pt-2 my-2">Web Scrapper</h4>
+        <p class="mb-2">
+          Need get a specify information from a site and turn this data into a table?
+          Here I made a bot with Ruby to do this, with very few configurations, you can grab any raw data.
+        </p>
 
-	<article class="box">
-		<div class="center">
-			<img src="images/rails.png" alt="rails" class="ico-skill">
-			<h3>Rails</h3>
-			<p>Ruby on Rails</p>
-		</div>
-	</article>
+        <!-- TAGS -->
+        <ul class="tag mt-1">
+          <li>Ruby</li>
+          <li>Nokogiri</li>
+          <li>Oriented Object</li>
+          <li>Unit Test</li>
+        </ul>
 
-	<article class="box">
-		<div class="center">
-			<img src="images/python.png" alt="python" class="ico-skill">
-			<h3>Python</h3>
-			<p>Pandas</p>
-			<p>Matplotlib</p>
-		</div>
-	</article>
-</section>
+        <!-- LINKS -->
+        <div class="mt-2">
+          <a href="https://sevlamare.github.io/CSS-course-platform/" target="_blank" class="btn mr-15 mb-15 btn-live">LIVE DEMO</a>
+          <a href="https://github.com/SevlaMare/CSS-course-platform" target="_blank" class="btn btn-source">SOURCE CODE</a>
+        </div>
+      </div>
+    </article>
+  </section>
 
+  <!-- CONTACT -->
+  <section class="mx-15" id="contact">
+    <h3 class="my-3">Contact</h3>
+    <ul>
+      <li class="mb-2"><a href="https://api.whatsapp.com/send?phone=+5548991417270" target="_blank">phone / whatsApp +55 48 99141 7270</a></li>
+      <li><a href="mailto:thiagotm@outlook.com">email / skype: thiagotm@outlook.com</a></li>
+    </ul>
+  </section>
+</main>
 
-<!-- TOOLS -->
-<h3 class="title-section tier3">Tools</h3>
-<p class="title-comment">Here are the tools and concepts I most use</p>
-<hr>
-<section class="tools">
-	<ul>
-		<li>Git</li>
-		<li>Linux</li>
-		<li>Github</li>
-		<li>VScode</li>
-	</ul>
-
-	<ul>
-		<li>Saas</li>
-		<li>CI/CD</li>
-		<li>Docker</li>
-		<li>Bootstrap 4</li>
-	</ul>
-
-	<ul>
-		<li>Agile</li>
-		<li>Clean Code</li>
-		<li>Data Analysis</li>
-		<li>Test Driven Development</li>
-	</ul>
-</section>
-	
-
-<!-- PROJECTS -->
-<h2 class="title-section" id="projects">PROJECTS</h2>
-<hr>
-<section class="grid-2">
-
-	<div class="grid-2-item g2-item0">
-		<h3>Web Applications</h3>
-		<h3>Web Pages</h3>
-	</div>
-
-	<div class="grid-2-item g2-item1">
-		<!-- <img src="images/web.png" alt="project icon" id="prj-ico-1"> -->
-		<h3>blogAwesome</h3>
-		<p>A modern, fast and minimalist blog.</p>
-		<p>The features include posts system, users and admin panel.</p>
-		<a href="https://github.com/SevlaMare/blogAwesome" target="_blank">See more!</a>
-	</div>
-	
-	<div class="grid-2-item g2-item2">
-		<h3>AppX</h3>
-		<p>A simple page to make posts.</p>
-		<a href="https://github.com/SevlaMare/appx" target="_blank">See more!</a>
-	</div>
-	
-	<div class="grid-2-item g2-item3">
-		<h3>TNW Page Clone</h3>
-		<p>A clone from The Next Web with Mobile First technique.</p>
-		<a href="https://github.com/SevlaMare/thenextweb-clone" target="_blank">See more!</a>
-	</div>
-</section>
-
-
-<!-- CONTACT -->
-<div>
-	<h2 class="title-section" id=contact>CONTACT</h2>
-	<hr>
-
-	<div class="social-media">
-		<a href="https://www.linkedin.com/in/sevlamare" target="_blank">linkedin
-			<img src="images/icons/linkedin.svg" alt="linkedin" class="ico-media">
-		</a> 
-
-		<a href="https://api.whatsapp.com/send?phone=+5548991417270" target="_blank">WhatsApp
-			<img src="images/icons/whatsapp.svg" alt="whatsapp" class="ico-media">
-		</a>
-
-		<a href="https://github.com/SevlaMare/" target="_blank">Github
-			<img src="images/icons/github.svg" alt="github" class="ico-media">
-		</a> 
-	</div>
-</div>
-
-<!-- FOOTER -->
+<hr class="line-1 mt-3">
 <footer>
-	<a href="mailto:thiagotm@outlook.com" target="_blank">thiagotm@outlook.com
-		<img src="images/icons/gmail.svg" alt="email" class="ico-media">
-	</a> 
+  <div class="container m-center p1">
+    <ul class="flex justify-center wrap py-3">
+      <li><a href="https://www.linkedin.com/in/sevla-mare" target="_blank">
+        <img src="images/icons/linkedin.svg" class="ico-media"> Linkedin
+      </a></li>
 
-	<a href="https://twitter.com/sevlamare" target="_blank">#sevlamare
-		<img src="images/icons/twitter.svg" alt="twitter" class="ico-media">
-	</a>
+      <li><a href="https://twitter.com/sevlamare" target="_blank">
+        <img src="images/icons/twitter.svg" class="ico-media"> Twitter
+      </a></li>
 
-	<small>São Paulo - Brazil - 2020</small>
+      <li><a href="https://github.com/SevlaMare" target="_blank">
+        <img src="images/icons/github.svg" class="ico-media"> Github
+      </a></li>
+    </ul>
+
+    <small class="flex justify-center align-center f06 pt-3 pb-1" id="copyr">
+      &copy 2020 by Thiago Miranda. All rights reserved.
+    </small>
+  </div>
 </footer>
-
 
 </body>
 </html>
