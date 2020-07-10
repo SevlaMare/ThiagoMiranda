@@ -123,3 +123,9 @@ footer a {
   padding: 5px;
   color: #333;
 }
+
+@media screen and (min-width: 1024px) {
+  .mr-15-x {
+    margin-right: 15px;
+  }
+}
