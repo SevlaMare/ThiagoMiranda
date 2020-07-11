@@ -133,7 +133,7 @@ footer a {
   .mr-15-x { margin-right: 15px; }
 }
 
-@media screen and (max-width: 461px) {
+@media screen and (max-width: 963px) {
   /* change mobile title img */
   .mt-15-x { 
     margin-top: 20px;
