@@ -109,6 +109,10 @@ header {
   padding: 4px;
 }
 
+#contact a:hover { 
+  color: red;
+}
+
 /* FOOTER */
 .line-1 {
   width: 100%;
@@ -124,8 +128,15 @@ footer a {
   color: #333;
 }
 
-@media screen and (min-width: 1024px) {
-  .mr-15-x {
-    margin-right: 15px;
-  }
+@media screen and (min-width: 963px) {
+  /* change on desk space img-text */
+  .mr-15-x { margin-right: 15px; }
+}
+
+@media screen and (max-width: 461px) {
+  /* change mobile title img */
+  .mt-15-x { 
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
 }
