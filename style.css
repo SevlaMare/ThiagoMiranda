@@ -57,6 +57,7 @@ nav { background: rgba(70, 130, 180, 0.87); }
 }
 
 /* ABOUT */
+#about { min-height: 250px; }
 #about h3 { line-height: 26px; }
 #about p { line-height: 22px; }
 #about a { color: #00a2ff }
@@ -69,15 +70,12 @@ nav { background: rgba(70, 130, 180, 0.87); }
 }
 
 /* PROJECTS */
-header { 
-  width: 290px;
-  margin: 0 auto; 
-}
+#projects h3 { text-align: center; }
 
 .header-line {
   border-top: 1px solid red;
-  margin-top: -25px;
   width: 230px;
+  margin-top: -25px;
 }
 
 .box1 {
