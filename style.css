@@ -27,9 +27,7 @@
   color: #fff;
 }
 
-main {
-  min-width: 320px;
-}
+main { min-width: 320px; }
 
 /* --- CUSTOM --- */
 #logo { color: #fff; }
@@ -66,8 +64,10 @@ nav { background: rgba(70, 130, 180, 0.87); }
 #avatar {
   height: 250px;
   width: 266px;
-  margin: 30px auto;
+  margin-bottom: 30px;
 }
+
+#info { margin-top: 60px; }
 
 /* PROJECTS */
 #projects h3 { text-align: center; }
@@ -108,9 +108,7 @@ nav { background: rgba(70, 130, 180, 0.87); }
   padding: 4px;
 }
 
-#contact a:hover { 
-  color: red;
-}
+#contact a:hover { color: red; }
 
 /* FOOTER */
 .line-1 {
@@ -135,7 +133,7 @@ footer a {
 
 @media screen and (max-width: 963px) {
   /* change mobile title img */
-  .mt-15-x { 
+  .mt-15-x {
     margin-top: 20px;
     margin-bottom: 20px;
    }
