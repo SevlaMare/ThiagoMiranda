@@ -88,9 +88,7 @@ nav { background: rgba(70, 130, 180, 0.87); }
  max-width: 500px;
 }
 
-.img-prj {
-  width: 100%; 
-}
+.img-prj { width: 100%; }
 
 .btn-live:hover {
   transition: all .3s ease-in-out;
