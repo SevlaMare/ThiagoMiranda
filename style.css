@@ -62,8 +62,9 @@ nav { background: rgba(70, 130, 180, 0.87); }
 #about a { color: #00a2ff }
 #about a:hover { text-decoration: underline red; }
 
-#avatar { 
-  width: 150px;
+#avatar {
+  height: 250px;
+  width: 266px;
   margin: 30px auto;
 }
 
