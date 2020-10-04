@@ -80,7 +80,7 @@ nav { background: rgba(70, 130, 180, 0.87); }
 
 .box1 {
   min-width: 250px;
-  max-width: 400px;
+  max-width: 990px;
 }
 
 .box2 {
@@ -121,6 +121,10 @@ footer a {
   margin-right: 5px;
   padding: 5px;
   color: #333;
+}
+
+@media screen and (min-width: 1000px) {
+  .box1 { max-width: 400px; }
 }
 
 @media screen and (min-width: 963px) {
