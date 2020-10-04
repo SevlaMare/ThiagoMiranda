@@ -34,12 +34,12 @@ main { min-width: 320px; }
 
 .icon {
   width: 25px;
-  margin-right: 10px;
+  height: 25px;
+  margin-right: 15px;
 }
 
 /* NAVBAR */
 nav { background: rgba(70, 130, 180, 0.87); }
-.larg-nav-btn { display: none }
 
 .tag li {
   display: inline-block;
