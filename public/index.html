@@ -1,89 +1,232 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="I build modern and responsible web pages and applications. Come to see my projects.">
+  <meta name="keywords" content="Ruby, Javascript, React, Rails, html, css, bootstrap">
+  <meta name="author" content="Thiago Miranda">
+  <meta name="robots" content="index, follow">
+  <link href="ministrap.css" rel=stylesheet>
+  <link href="style.css" rel=stylesheet>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/icons/chart.svg" type="image/x-icon"/>
+  <meta name="image" property="og:image" content="https://sevlamare.github.io/ThiagoMiranda/images/picture.png">
+  <meta name="description" property="og:description" content="Software Developer. Experienced building applications and responsive websites. Thiago Miranda Portfolio.">
+  <title>Thiago Miranda • Portifolio</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179534380-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.0.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.0.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.0.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.0.1/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.0.1/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.0.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.0.1/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.0.1/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.0.1/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.0.1/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    gtag('config', 'UA-179534380-1');
+  </script>
+</head>
+<body>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<!-- NAVBAR -->
+<nav class="sticky">
+  <div class="container m-center flex space-between align-center">
+    <div class="px-2 py-05">
+      <a href="#about" class="fs1 f08">
+        <h1 id="logo">Thiago Miranda</h1>
+      </a>
+      <h2 class="fs1 f12">SOFTWARE DEVELOPER</h2>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <div>
+      <a href="https://www.linkedin.com/in/sevla-mare/" target="_blank"><img src="images/icons/linkedin.svg" class="icon"></a>
+      <a href="https://angel.co/u/thiago-miranda-5" target="_blank"><img src="images/icons/angel.svg" class="icon"></a>
+      <a href="https://github.com/SevlaMare" target="_blank"><img src="images/icons/github.svg" class="icon"></a>
+    </div>
+  </div>
+</nav>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+<main class="container">
+  <!-- ABOUT -->
+  <section id="about" class="p3">
+    <img class="float-left" id="avatar" src="images/picture.png" alt="picture"/>
+
+    <div id="info">
+      <h3>Welcome! I'm a Software Developer.</h3>
+      <br>
+      <p>I build web applications and responsive websites.</p>
+      <br>
+      <p>Do you want to talk about a project, idea or need a solution?
+        <a href="#contact">Contact</a> 
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="mx-15">
+    <h3 class="my-3">Featured Projects</h3>
+    <hr class="header-line m-center">
+
+    <!-- PRJ 1 -->
+    <article class="grid box py-3 my-6">
+      <div class="box1 mr-15-x">
+        <img src="images/proj1.png" class="img-prj">
+      </div>
+
+      <div class="box2">
+        <!-- DESCRIPTION -->
+        <h4 class="f12 mt-15-x">DevPro</h4>
+        <p class="mb-2">
+          A responsive and with a modern design page, 
+          where you can buy tickets to online classes.
+          Here I made the Front-end only.
+        </p>
+
+        <!-- TAGS -->
+        <ul class="tag mt-1">
+          <li>CSS</li>
+          <li>HTML</li>
+          <li>Responsive Design</li>
+          <li>Mobile First</li>
+          <li>User Experience</li>
+          <li>User Interface</li>
+        </ul>
+
+        <!-- LINKS -->
+        <div class="mt-2">
+          <a href="https://sevlamare.github.io/CSS-course-platform/" target="_blank" class="btn mr-15 mb-15 btn-live">LIVE DEMO</a>
+          <a href="https://github.com/SevlaMare/CSS-course-platform" target="_blank" class="btn btn-source">SOURCE CODE</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PRJ 2 -->
+    <article class="grid box py-3 my-6">
+      <div class="box1 mr-15-x">
+        <img src="images/proj2.png" class="img-prj">
+      </div>
+
+      <div class="box2">
+        <!-- DESCRIPTION -->
+        <h4 class="f12 mt-15-x">Wallet</h4>
+        <p class="mb-2">
+          A mobile web APP to manage your cash flow.
+        </p>
+
+        <!-- TAGS -->
+        <ul class="tag mt-1">
+          <li>Ruby</li>
+          <li>Ruby On Rails</li>
+          <li>HTML/CSS</li>
+          <li>Sass</li>
+          <li>Integration Test</li>
+          <li>Postgres</li>
+          <li>Heroku</li>
+        </ul>
+
+        <!-- LINKS -->
+        <div class="mt-2">
+          <a href="https://wallet-703.herokuapp.com/" target="_blank" class="btn mr-15 mb-15 btn-live">LIVE DEMO</a>
+          <a href="https://github.com/SevlaMare/wallet" target="_blank" class="btn btn-source">SOURCE CODE</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PRJ 3 -->
+    <article class="grid box py-3 my-6">
+      <div class="box1 mr-15-x">
+        <img src="images/proj3.png" class="img-prj">
+      </div>
+
+      <div class="box2">
+        <!-- DESCRIPTION -->
+        <h4 class="f12 mt-15-x">Robot x Ninja</h4>
+        <p class="mb-2">
+          Want to play fun and short game?
+          You can eliminate the ninjas using a robot with massive destruction weapons.
+          Make the highest score and compare it globally. User arrows and space bar to play.
+        </p>
+
+        <!-- TAGS -->
+        <ul class="tag mt-1">
+          <li>Javascript</li>
+          <li>Webpack</li>
+          <li>Jest</li>
+          <li>Async</li>
+          <li>API</li>
+          <li>Netlify</li>
+        </ul>
+
+        <!-- LINKS -->
+        <div class="mt-2">
+          <a href="https://robot-vs-ninja.netlify.app/" target="_blank" class="btn mr-15 mb-15 btn-live">LIVE DEMO</a>
+          <a href="https://github.com/SevlaMare/robotGame" target="_blank" class="btn btn-source">SOURCE CODE</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PRJ 4 -->
+    <article class="grid box py-3 my-6">
+      <div class="box1 mr-15-x">
+        <img src="images/proj4.png" class="img-prj">
+      </div>
+
+      <div class="box2">
+        <!-- DESCRIPTION -->
+        <h4 class="f12 mt-15-x">TopStocks</h4>
+        <p class="mb-2">
+          Check the current top stocks from NASDAQ in this dashboard.
+          This project is a catalog like build with React and Redux, which fetch data from an API service.
+        </p>
+
+        <!-- TAGS -->
+        <ul class="tag mt-1">
+          <li>React</li>
+          <li>Redux</li>
+          <li>Jest</li>
+          <li>Cypress</li>
+          <li>Webpack</li>
+          <li>Babel</li>
+        </ul>
+
+        <!-- LINKS -->
+        <div class="mt-2">
+          <a href="https://stock-catalogue.herokuapp.com/" target="_blank" class="btn mr-15 mb-15 btn-live">LIVE DEMO</a>
+          <a href="https://github.com/SevlaMare/TopStocks" target="_blank" class="btn btn-source">SOURCE CODE</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="mx-15" id="contact">
+    <h3 class="my-3">Contact</h3>
+    <ul>
+      <li class="mb-2"><a href="https://api.whatsapp.com/send?phone=+5511942678031" target="_blank">phone / whatsApp +55 11 9 4267 8031</a></li>
+      <li><a href="mailto:thiagotm@outlook.com">email / skype: thiagotm@outlook.com</a></li>
+    </ul>
+  </section>
+</main>
+
+<hr class="line-1 mt-3">
+<footer>
+  <div class="container m-center p1">
+    <ul class="flex justify-center wrap py-3">
+      <li><a href="https://www.linkedin.com/in/sevla-mare" target="_blank">
+        <img src="images/icons/linkedin.svg" class="ico-media"> Linkedin
+      </a></li>
+
+      <li><a href="https://twitter.com/sevlamare" target="_blank">
+        <img src="images/icons/twitter.svg" class="ico-media"> Twitter
+      </a></li>
+
+      <li><a href="https://github.com/SevlaMare" target="_blank">
+        <img src="images/icons/github.svg" class="ico-media"> Github
+      </a></li>
+    </ul>
+
+    <small class="flex justify-center align-center f06 pt-3 pb-1" id="copyr">
+      &copy 2020 by Thiago Miranda. All rights reserved.
+    </small>
+  </div>
+</footer>
+
+</body>
 </html>
